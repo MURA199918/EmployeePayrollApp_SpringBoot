@@ -41,7 +41,7 @@ public class EmployeePayrollService implements IEmployeePayrollService{
 
 	public void deleteEmployeePayrollData(int empId) {
 		// TODO Auto-generated method stub
-		
+		employeePayrollList.remove(empId-1);
 	}
 	
 }
