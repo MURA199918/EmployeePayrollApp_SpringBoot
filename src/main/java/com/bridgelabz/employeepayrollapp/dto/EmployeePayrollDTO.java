@@ -15,7 +15,7 @@ import lombok.ToString;
 
 public @ToString class EmployeePayrollDTO {
 	
-	@Pattern(regexp = "^[A-Z]{1}{a-zA-Z\\s}{2,}$", message = "Employee name Invalid")
+	@Pattern(regexp = "^[A-Z]{1}[a-zA-Z\\s]{2,}$", message = "Employee name Invalid")
 	public String name;
 	
 	@Min(value = 500, message = "Min Wage should be more than 500")
